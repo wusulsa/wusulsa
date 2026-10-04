@@ -3,7 +3,7 @@
 
 (function () {
   const RECIPIENT_EMAIL   = 'omar-b@wosol.net';      // مستلم طلبات التسجيل
-  const REGISTRATION_CC   = 'info@wosol.net';        // نسخة من طلبات التسجيل
+  const REGISTRATION_CC   = 'info@wosol.net,esraa.f@wosol.net';   // نسخ من طلبات التسجيل
   const CONTACT_RECIPIENT = 'info@wosol.net';        // مستلم نماذج التواصل
   const CONTACT_CC        = 'omar-b@wosol.net';      // نسخة من نماذج التواصل
 
