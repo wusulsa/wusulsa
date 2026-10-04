@@ -2,9 +2,10 @@
 'use strict';
 
 (function () {
-  const RECIPIENT_EMAIL = 'omar-b@wosol.net';        // المستلم الافتراضي (نموذج التسجيل)
+  const RECIPIENT_EMAIL   = 'omar-b@wosol.net';      // مستلم طلبات التسجيل
+  const REGISTRATION_CC   = 'info@wosol.net';        // نسخة من طلبات التسجيل
   const CONTACT_RECIPIENT = 'info@wosol.net';        // مستلم نماذج التواصل
-  const CONTACT_CC = 'omar-b@wosol.net';             // نسخة كربونية لنماذج التواصل
+  const CONTACT_CC        = 'omar-b@wosol.net';      // نسخة من نماذج التواصل
 
   const endpointFor = email => `https://formsubmit.co/ajax/${encodeURIComponent(email)}`;
 
@@ -63,6 +64,7 @@
 
   window.WASUL_EMAIL = {
     recipient: RECIPIENT_EMAIL,
+    registrationCc: REGISTRATION_CC,
     contactRecipient: CONTACT_RECIPIENT,
     contactCc: CONTACT_CC,
     submitForm,

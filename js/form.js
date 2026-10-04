@@ -357,7 +357,10 @@ function validateAll() {
       let mailed = false;
       try {
         if (window.WASUL_EMAIL?.submitForm) {
-          await window.WASUL_EMAIL.submitForm(form, 'طلب تسجيل طالبة جديد من موقع وُسُل');
+          // طلب التسجيل يصل إلى omar-b@wosol.net ونسخة إلى info@wosol.net
+          await window.WASUL_EMAIL.submitForm(form, 'طلب تسجيل طالبة جديد من موقع وُسُل', {
+            cc: window.WASUL_EMAIL.registrationCc,
+          });
           mailed = true;
         }
       } catch (mailError) {
